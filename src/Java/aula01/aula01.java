@@ -14,13 +14,16 @@ public class aula01 {
 
         System.out.println("*********************");
 
-        for (int i = 0; i < valores.length; i++) {
-            if (i < 10) {
-                int apoio = valores[valores.length - (i + 1)];
-                valores[valores.length - (i + 1)] = valores[i];
-                valores[i] = apoio;
+        int[] aux = new int[20];
+
+        for (int i = 0; i < aux.length-1; i++) {
+            for (int j = valores.length-1 ; j > 0; j--) {
+                aux[i] = valores[j];
+                i++;
             }
-            System.out.println(valores[i] + " ");
+        }
+        for (int k = 0; k < aux.length - 1; k++) {
+            System.out.println(aux[k] + " ");
         }
         nOcorrencias(valores, 5);
         hasRepeat(valores);
