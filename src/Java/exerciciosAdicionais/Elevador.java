@@ -6,7 +6,39 @@ public class Elevador {
         private int capacidade;
         private int pessoasPresentes;
 
-        public void inicializa (int capacidade, int totalAndares){
+    public void setAndarAtual(int andarAtual) {
+        this.andarAtual = andarAtual;
+    }
+
+    public int getAndarAtual() {
+        return andarAtual;
+    }
+
+    public void setTotalAndares(int totalAndares) {
+        this.totalAndares = totalAndares;
+    }
+
+    public int getTotalAndares() {
+        return totalAndares;
+    }
+
+    public void setCapacidade(int capacidade) {
+        this.capacidade = capacidade;
+    }
+
+    public int getCapacidade() {
+        return capacidade;
+    }
+
+    public void setPessoasPresentes(int pessoasPresentes) {
+        this.pessoasPresentes = pessoasPresentes;
+    }
+
+    public int getPessoasPresentes() {
+        return pessoasPresentes;
+    }
+
+    public void inicializa (int capacidade, int totalAndares){
             andarAtual = 0;
             pessoasPresentes = 0;
             this.capacidade = capacidade;
