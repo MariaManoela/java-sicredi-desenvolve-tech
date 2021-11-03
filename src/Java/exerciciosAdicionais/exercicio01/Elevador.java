@@ -1,4 +1,4 @@
-package Java.exerciciosAdicionais;
+package Java.exerciciosAdicionais.exercicio01;
 
 public class Elevador {
         private int andarAtual;

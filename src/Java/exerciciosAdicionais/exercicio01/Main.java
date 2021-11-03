@@ -1,4 +1,6 @@
-package Java.exerciciosAdicionais;
+package Java.exerciciosAdicionais.exercicio01;
+
+import Java.exerciciosAdicionais.exercicio01.Elevador;
 
 public class Main {
     public static void main(String[] args){
