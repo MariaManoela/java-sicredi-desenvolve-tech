@@ -14,5 +14,11 @@ public class Main {
 
         elevador.setTotalAndares(20);
         elevador.getTotalAndares();
+
+        elevador.inicializa(15, 20);
+        elevador.entra();
+        elevador.sai();
+        elevador.sobe();
+        elevador.desce();
     }
 }
