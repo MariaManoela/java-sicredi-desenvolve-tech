@@ -14,25 +14,42 @@ public class Elevador {
         }
 
         public void entra (){
-            if(pessoasPresentes < capacidade){
-                pessoasPresentes += 1;
-                System.out.println("Total de pessoas: " +pessoasPresentes);
+            if (pessoasPresentes < capacidade){
+                pessoasPresentes++;
+                System.out.println("------PESSOA ENTRANDO------");
+                System.out.println("Total de pessoas: " + pessoasPresentes);
             }else{
                 System.out.println("Capacidade máxima atingida!");
             }
         }
 
         public void sai (){
-
+            if (pessoasPresentes > 0){
+                pessoasPresentes--;
+                System.out.println("------PESSOA SAINDO------");
+                System.out.println("Total de pessoas: " + pessoasPresentes);
+            }else{
+                System.out.println("Elevador vazio!");
+            }
         }
 
         public void sobe (){
-
+            if (andarAtual < totalAndares){
+                andarAtual++;
+                System.out.println("------SUBINDO------");
+                System.out.println("O elevador se encontra no " + andarAtual + " andar");
+            }else{
+                System.out.println("O elevador se encontra no último andar");
+            }
         }
 
         public void desce (){
-
+            if (andarAtual > 0){
+                andarAtual--;
+                System.out.println("------DESCENDO------");
+                System.out.println("O elevador se encontra no " + andarAtual + "andar");
+            }else{
+                System.out.println("O elevador se encontra no térreo");
+            }
         }
-
-
 }
