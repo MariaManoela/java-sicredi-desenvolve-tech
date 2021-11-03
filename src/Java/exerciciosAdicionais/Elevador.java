@@ -79,7 +79,7 @@ public class Elevador {
             if (andarAtual > 0){
                 andarAtual--;
                 System.out.println("------DESCENDO------");
-                System.out.println("O elevador se encontra no " + andarAtual + "andar");
+                System.out.println("O elevador se encontra no " + andarAtual + " andar");
             }else{
                 System.out.println("O elevador se encontra no térreo");
             }
