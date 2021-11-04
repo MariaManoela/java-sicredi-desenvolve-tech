@@ -9,14 +9,19 @@ public class ContaCorrente {
     }
 
     public void deposito (double valor) {
-        if (valor > 0)
+        if (valor > 0){
             saldo += valor;
+        }else{
+            System.out.println("Valor inválido.");
+        }
     }
 
     public double retirada (double valor) {
-        if (saldo - valor >= 0)
+        if (saldo - valor >= 0){
             saldo -= valor;
-
+        }else{
+            System.out.println("Não é possível realizar a retirada desse valor.");
+        }
         return saldo;
     }
 
