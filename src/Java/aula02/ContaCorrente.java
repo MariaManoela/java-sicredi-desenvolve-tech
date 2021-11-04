@@ -4,8 +4,9 @@ public class ContaCorrente {
     private double saldo = 0.0;
     private int nroConta;
 
-    public ContaCorrente (int n) {
-        nroConta = n;
+    public ContaCorrente (int nroConta, double saldo) {
+        this.nroConta = nroConta;
+        this.saldo = saldo;
     }
 
     public void deposito (double valor) {
