@@ -24,7 +24,7 @@ public class Administrativo extends Assistente {
     public void exibeDados(){
         System.out.println("Nome: " + getNome());
         System.out.println("CPF: " + getCpf());
-        System.out.println("Salário: " + getSalario());
+        System.out.println("Salário: " + (getSalario() + getBonusNoturno()));
         System.out.println("Matrícula: " + getMatricula());
         System.out.println("Turno: " + getTurno());
 

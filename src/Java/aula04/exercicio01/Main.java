@@ -11,7 +11,7 @@ public class Main {
         funcionario1.exibeDados();
         assistente1.exibeDados();
         tecnico1.exibeDados();
-        administrativo2.exibeDados();
+        administrativo1.exibeDados();
         administrativo2.exibeDados();
     }
 }
