@@ -5,12 +5,13 @@ public class Cachorro extends Animal {
         super(nome, raca);
     }
 
+    public void late() {
+        System.out.println("AUAU");
+    }
+
     @Override
     public void exibeDados() {
         super.exibeDados();
-    }
-
-    public void late() {
-        System.out.println("AUAU");
+        late();
     }
 }

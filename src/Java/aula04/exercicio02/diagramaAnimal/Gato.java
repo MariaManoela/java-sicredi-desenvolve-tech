@@ -5,12 +5,13 @@ public class Gato extends Animal {
         super(nome, raca);
     }
 
+    public void mia() {
+        System.out.println("MIAU");
+    }
+
     @Override
     public void exibeDados() {
         super.exibeDados();
-    }
-
-    public void mia() {
-        System.out.println("MIAU");
+        mia();
     }
 }

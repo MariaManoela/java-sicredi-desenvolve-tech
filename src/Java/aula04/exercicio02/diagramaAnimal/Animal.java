@@ -17,12 +17,13 @@ public class Animal {
         return raca;
     }
 
+    public void caminha() {
+        System.out.println("CAMINHANDO");
+    }
+
     public void exibeDados() {
         System.out.println("Nome: " + getNome());
         System.out.println("Raça: " + getRaca());
-    }
-
-    public void caminha() {
-        System.out.println("CAMINHANDO");
+        caminha();
     }
 }

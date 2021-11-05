@@ -8,12 +8,8 @@ public class Main {
         Gato gato2 = new Gato("Jinx", "SRD");
 
         animal1.exibeDados();
-        animal1.caminha();
-
         cachorro1.exibeDados();
-        cachorro1.late();
-
         gato1.exibeDados();
-        gato1.mia();
+        gato2.exibeDados();
     }
 }
