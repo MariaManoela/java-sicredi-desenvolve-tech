@@ -1,4 +1,4 @@
-package Java.aula02;
+package Java.aula02.exercicios01e02;
 
 public class ContaCorrente {
     private double saldo = 0.0;
