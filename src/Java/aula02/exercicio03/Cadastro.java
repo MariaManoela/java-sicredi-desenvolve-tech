@@ -5,33 +5,30 @@ import java.util.Scanner;
 
 public class Cadastro {
     private ArrayList<Cliente> cliente = new ArrayList<>();
-    Cliente cliente1 = new Cliente();
-    Cliente cliente2 = new Cliente();
     Scanner input = new Scanner(System.in);
 
-    public void cadastraNome() {
+    public void cadastraNome(Cliente novoCliente) {
         System.out.println("Informe o seu nome: ");
-        cliente1.setNome(input.nextLine());
+        novoCliente.setNome(input.next());
     }
 
-    public void cadastraCpf() {
+    public void cadastraCpf(Cliente novoCliente) {
         System.out.println("Informe seu CPF: ");
-        cliente1.setCpf(input.nextLine());
+        novoCliente.setCpf(input.next());
     }
 
-    public void cadastraIdade() {
+    public void cadastraIdade(Cliente novoCliente) {
         System.out.println("Informe sua idade: ");
-        cliente1.setIdade(input.nextInt());
+        novoCliente.setIdade(input.nextInt());
     }
 
-    public void cadastraGenero() {
+    public void cadastraGenero(Cliente novoCliente) {
         System.out.println("Informe seu gênero: ");
-        cliente1.setGenero(input.next());
+        novoCliente.setGenero(input.next());
     }
 
-    public void cadastraCliente() {
-        cliente.add(cliente1);
-        cliente.add(cliente2);
+    public void cadastraCliente(Cliente novoCliente) {
+        cliente.add(novoCliente);
     }
 
     public void imprimeClientes() {
@@ -40,10 +37,10 @@ public class Cadastro {
         }
     }
 
-    public void exibirDados() {
-        System.out.println("Seu nome: " + cliente1.getNome());
-        System.out.println("Seu cpf: " + cliente1.getCpf());
-        System.out.println("Sua idade: " + cliente1.getIdade());
-        System.out.println("Seu gênero: " + cliente1.getGenero());
+    public void exibirDados(Cliente novoCliente) {
+        System.out.println("Seu nome: " + novoCliente.getNome());
+        System.out.println("Seu cpf: " + novoCliente.getCpf());
+        System.out.println("Sua idade: " + novoCliente.getIdade());
+        System.out.println("Seu gênero: " + novoCliente.getGenero());
     }
 }
