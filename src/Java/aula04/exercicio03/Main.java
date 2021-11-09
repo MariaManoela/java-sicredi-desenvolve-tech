@@ -8,10 +8,12 @@ public class Main {
         CamaroteInferior camaroteinf1 = new CamaroteInferior(20, 10, "H2");
         CamaroteSuperior camarotesup1 = new CamaroteSuperior(20, 10, 15);
 
-        ingresso1.imprimeValor();
-        normal1.imprimeValor();
-        vip1.imprimeValor();
-        camaroteinf1.imprimeValor();
-        camarotesup1.imprimeValor();
+//        ingresso1.menu();
+        normal1.menu();
+//        ingresso1.imprimeValor();
+//        normal1.imprimeValor();
+//        vip1.imprimeValor();
+//        camaroteinf1.imprimeValor();
+//        camarotesup1.imprimeValor();
     }
 }

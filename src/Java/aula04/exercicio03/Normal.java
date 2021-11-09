@@ -6,7 +6,7 @@ public class Normal extends Ingresso{
     }
 
     public void valorNormal() {
-        System.out.println("Ingresso normal");
+        System.out.println("=====INGRESSO NORMAL=====");
     }
 
     @Override

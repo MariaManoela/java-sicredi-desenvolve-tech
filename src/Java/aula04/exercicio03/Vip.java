@@ -13,7 +13,7 @@ public class Vip extends Ingresso{
     }
 
     public void valorVip() {
-        System.out.println("Valor do ingresso VIP: " + (getValor() + getValorAdicional()));
+        System.out.println("Valor: R$ " + (getValor() + getValorAdicional()));
     }
 
     @Override

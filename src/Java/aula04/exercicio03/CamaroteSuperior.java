@@ -13,7 +13,7 @@ public class CamaroteSuperior extends Vip{
     }
 
     public void valorCamarote() {
-        System.out.println("Valor do ingresso camarote superior: " + (getValor() + getValorAdicional() + getAdicionalCamarote()));
+        System.out.println("Valor: R$ " + (getValor() + getValorAdicional() + getAdicionalCamarote()));
     }
 
     @Override
