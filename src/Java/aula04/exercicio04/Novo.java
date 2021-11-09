@@ -1,10 +1,19 @@
 package Java.aula04.exercicio04;
 
+import java.util.Random;
+
 public class Novo extends Imovel{
     private double valorAdicional;
 
+    public Novo() {
+    }
+
     public Novo(String endereco, double preco, double valorAdicional) {
         super(endereco, preco);
+        this.valorAdicional = valorAdicional;
+    }
+
+    public void setValorAdicional(double valorAdicional) {
         this.valorAdicional = valorAdicional;
     }
 
@@ -13,8 +22,8 @@ public class Novo extends Imovel{
     }
 
     public void valorAdicional() {
-        System.out.println("Valor adicional do imóvel novo: " + getValorAdicional());
-        System.out.println("Valor total: " + (getPreco() + getValorAdicional()));
+        System.out.println("Valor adicional do imóvel novo: R$ " + getValorAdicional());
+        System.out.println("Valor total: R$ " + (getPreco() + getValorAdicional()));
     }
 
     @Override

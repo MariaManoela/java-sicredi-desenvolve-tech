@@ -7,8 +7,19 @@ public class Imovel {
     private String endereco;
     private double preco;
 
+    public Imovel() {
+    }
+
     public Imovel(String endereco, double preco) {
         this.endereco = endereco;
+        this.preco = preco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
@@ -45,6 +56,7 @@ public class Imovel {
                 Velho velho = new Velho("Andradas", 100000, 20000);
                 System.out.println("======IMÓVEL VELHO======");
                 velho.exibirDados();
+                break;
             default:
                 System.out.println("Insira uma opção válida!");
         }

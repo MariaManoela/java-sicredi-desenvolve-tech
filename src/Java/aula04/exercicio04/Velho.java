@@ -3,6 +3,9 @@ package Java.aula04.exercicio04;
 public class Velho extends Imovel{
     private double desconto;
 
+    public Velho() {
+    }
+
     public Velho(String endereco, double preco, double desconto) {
         super(endereco, preco);
         this.desconto = desconto;
@@ -13,8 +16,8 @@ public class Velho extends Imovel{
     }
 
     public void desconto() {
-        System.out.println("Desconto do imóvel velho: " + getDesconto());
-        System.out.println("Valor total: " + (getPreco() - getDesconto()));
+        System.out.println("Desconto do imóvel velho: R$ " + getDesconto());
+        System.out.println("Valor total: R$ " + (getPreco() - getDesconto()));
     }
 
     @Override
